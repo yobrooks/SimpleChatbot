@@ -1,0 +1,25 @@
+Script started on Sat 04 Apr 2020 09:36:26 AM EDT
+]0;brooks_yo@cobra:~/CSC380/Project2[?1034h[brooks_yo@cobra Project2]$ make
+g++ -std=c++11 main.cpp -c
+g++ -std=c++11  words.cpp -c
+g++ -std=c++11  Chatbot.cpp -c
+g++ -std=c++11 -o main main.o words.o Chatbot.o
+]0;brooks_yo@cobra:~/CSC380/Project2[brooks_yo@cobra Project2]$ ./main
+Hello. What is your name?
+- Yas
+Ok Yas. What can I do for you?
+- I feel sad.
+Why do you feel that way?
+- I don't know.
+Can you elaborate?
+- I had a nightmare yesterday.
+What persons appear in your dreams?
+- My mother and father.
+How do you get along with your family?
+- Pret    I Pretty good.
+What does that suggest to you?
+- Sorry bye
+]0;brooks_yo@cobra:~/CSC380/Project2[brooks_yo@cobra Project2]$ ext[Kit
+exit
+
+Script done on Sat 04 Apr 2020 09:37:59 AM EDT
