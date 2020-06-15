@@ -1,7 +1,21 @@
-For this project, a Chatbot class was made to hold the main functionality of the Chatbot's dialogue. 
-The Chatbot had a private array with the no match values and an unordered map for the other key-response values.
-To find a response to a user's input, the user's input is first parsed for cleaning (making full sentence lowercase and deleting unneccessary punctuation), and then the entire string is broken into an array where each word is an element.
-Next, for each word in the array, it is looked for in the Chatbot's unordered map. If the key word is found in the dialogue map then the Chatbot returns its response and breaks out of the loop. In this loop, if the string "i" is found then the next word is added to it to search for those phrases starting with "I". If none of the words from the user input are found in the dialogue map, then a response is returned from the noMatch array.
-To return a response, first the specific response to return is chosen based on a random number generator if the keyword has multiple possible responses. Also, the user input is substringed after the found keyword so if the rest of the user response needed to be added to the Chatbot response it can.
+# Simple Chatbot Project
 
-I tried to be as efficient as possible with the key-response pairs by using an unordered map to hold them so there was constant insert and lookup time. One efficiency problem I noticed was in the addToResponse() function, I should have checked to see if the response even had an asterik in it before mainpulating all the strings to prep them for being added to the asterik's place. It would have been less if statements to be evaluated in that case. 
+## Introduction
+This project simulates a text-based chatbot utilizing natural language processing pulling from a "database" of keywords and appropriate responses. This particular chatbot behaves similarly to a psychtherapist. The program asks a question, the user enters an answer to that question and then the process will repeat until the user says "bye". 
+
+## Guidelines
+The "-" character displays as a prompt whenever the user is entering dialogue to remind the user to enter that input. Each time the program reads a line of input from the user, it will search the input from certain keywords and if a match is found, it will display that particular response. If there are multiple responses, one will be chosen randomly. The bot always responds to the first matching keyword even if there are multiple in the user's input. The keywords and response pairs that the program pulls from are read in from a separate input file at the start of the program. 
+
+Example Conversation:
+What's on your mind?
+- I'm depressed.
+
+I'm sorry to hear you are depressed.
+-My boyfriend is mad at me.
+.
+.
+.
+That is quite interesting.
+- I've got to run. Bye.
+
+To find a response for a user's input, the input is first parsed for cleaning like removing uneccessary punctuation and making all letters lowercase. 
