@@ -9,12 +9,17 @@ The "-" character displays as a prompt whenever the user is entering dialogue to
 Example Conversation:
 
 What's on your mind?
-- I'm depressed.
+
+-I'm depressed.
 
 I'm sorry to hear you are depressed.
+
 -My boyfriend is mad at me.
-...
+.
+.
+.
 That is quite interesting.
-- I've got to run. Bye.
+
+-I've got to run. Bye.
 
 To find a response for a user's input, the input is first parsed for cleaning like removing uneccessary punctuation and making all letters lowercase. 
